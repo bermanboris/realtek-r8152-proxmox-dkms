@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt install build-essential dkms
+apt install -y build-essential dkms pve-headers-$(uname -r)
 
 mkdir /usr/src/r8152-2.16.1/
 cp -rv * /usr/src/r8152-2.16.1/
